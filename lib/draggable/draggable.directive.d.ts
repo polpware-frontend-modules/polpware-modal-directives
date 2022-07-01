@@ -13,6 +13,6 @@ export declare class polpModalDraggableDirective implements AfterViewInit {
     onMouseUp(event: MouseEvent): void;
     onMouseMove(event: MouseEvent): void;
     onMouseLeave(event: MouseEvent): void;
-    static ɵfac: i0.ɵɵFactoryDef<polpModalDraggableDirective, never>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<polpModalDraggableDirective, "[polpModalDraggable]", never, {}, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<polpModalDraggableDirective, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<polpModalDraggableDirective, "[polpModalDraggable]", never, {}, {}, never>;
 }
