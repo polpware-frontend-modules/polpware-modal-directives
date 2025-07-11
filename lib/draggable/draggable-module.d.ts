@@ -5,3 +5,4 @@ export declare class PolpDraggableModule {
     static ɵmod: i0.ɵɵNgModuleDeclaration<PolpDraggableModule, [typeof i1.polpModalDraggableDirective], never, [typeof i1.polpModalDraggableDirective]>;
     static ɵinj: i0.ɵɵInjectorDeclaration<PolpDraggableModule>;
 }
+//# sourceMappingURL=draggable-module.d.ts.map

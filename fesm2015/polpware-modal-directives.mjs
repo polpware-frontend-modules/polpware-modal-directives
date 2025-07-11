@@ -52,14 +52,19 @@ class polpModalDraggableDirective {
         this.isDraggable = false;
     }
 }
-polpModalDraggableDirective.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: polpModalDraggableDirective, deps: [{ token: i0.ElementRef }], target: i0.ɵɵFactoryTarget.Directive });
-polpModalDraggableDirective.ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "12.0.0", version: "13.3.11", type: polpModalDraggableDirective, selector: "[polpModalDraggable]", host: { listeners: { "mousedown": "onMouseDown($event)", "document:mouseup": "onMouseUp($event)", "document:mousemove": "onMouseMove($event)", "document:mouseleave": "onMouseLeave($event)" } }, ngImport: i0 });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: polpModalDraggableDirective, decorators: [{
+polpModalDraggableDirective.ɵfac = function polpModalDraggableDirective_Factory(t) { return new (t || polpModalDraggableDirective)(i0.ɵɵdirectiveInject(i0.ElementRef)); };
+polpModalDraggableDirective.ɵdir = /*@__PURE__*/ i0.ɵɵdefineDirective({ type: polpModalDraggableDirective, selectors: [["", "polpModalDraggable", ""]], hostBindings: function polpModalDraggableDirective_HostBindings(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵlistener("mousedown", function polpModalDraggableDirective_mousedown_HostBindingHandler($event) { return ctx.onMouseDown($event); })("mouseup", function polpModalDraggableDirective_mouseup_HostBindingHandler($event) { return ctx.onMouseUp($event); }, false, i0.ɵɵresolveDocument)("mousemove", function polpModalDraggableDirective_mousemove_HostBindingHandler($event) { return ctx.onMouseMove($event); }, false, i0.ɵɵresolveDocument)("mouseleave", function polpModalDraggableDirective_mouseleave_HostBindingHandler($event) { return ctx.onMouseLeave($event); }, false, i0.ɵɵresolveDocument);
+        }
+    } });
+(function () {
+    (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(polpModalDraggableDirective, [{
             type: Directive,
             args: [{
                     selector: '[polpModalDraggable]'
                 }]
-        }], ctorParameters: function () { return [{ type: i0.ElementRef }]; }, propDecorators: { onMouseDown: [{
+        }], function () { return [{ type: i0.ElementRef }]; }, { onMouseDown: [{
                 type: HostListener,
                 args: ['mousedown', ['$event']]
             }], onMouseUp: [{
@@ -71,14 +76,16 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImpo
             }], onMouseLeave: [{
                 type: HostListener,
                 args: ['document:mouseleave', ['$event']]
-            }] } });
+            }] });
+})();
 
 class PolpDraggableModule {
 }
-PolpDraggableModule.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: PolpDraggableModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
-PolpDraggableModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: PolpDraggableModule, declarations: [polpModalDraggableDirective], exports: [polpModalDraggableDirective] });
-PolpDraggableModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: PolpDraggableModule });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: PolpDraggableModule, decorators: [{
+PolpDraggableModule.ɵfac = function PolpDraggableModule_Factory(t) { return new (t || PolpDraggableModule)(); };
+PolpDraggableModule.ɵmod = /*@__PURE__*/ i0.ɵɵdefineNgModule({ type: PolpDraggableModule });
+PolpDraggableModule.ɵinj = /*@__PURE__*/ i0.ɵɵdefineInjector({});
+(function () {
+    (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(PolpDraggableModule, [{
             type: NgModule,
             args: [{
                     declarations: [
@@ -88,7 +95,9 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImpo
                         polpModalDraggableDirective
                     ]
                 }]
-        }] });
+        }], null, null);
+})();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(PolpDraggableModule, { declarations: [polpModalDraggableDirective], exports: [polpModalDraggableDirective] }); })();
 
 /*
  * Public API Surface of modal-directives

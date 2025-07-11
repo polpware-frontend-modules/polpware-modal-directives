@@ -1,25 +1,25 @@
 {
   "name": "@polpware/modal-directives",
-  "version": "13.1.0",
+  "version": "14.0.0",
   "dependencies": {
     "tslib": "^2.0.0"
   },
   "peerDependencies": {
-    "@angular/common": "^13.0.0",
-    "@angular/core": "^13.0.0"
+    "@angular/common": "^14.0.0",
+    "@angular/core": "^14.0.0"
   },
   "module": "fesm2015/polpware-modal-directives.mjs",
   "es2020": "fesm2020/polpware-modal-directives.mjs",
   "esm2020": "esm2020/polpware-modal-directives.mjs",
   "fesm2020": "fesm2020/polpware-modal-directives.mjs",
   "fesm2015": "fesm2015/polpware-modal-directives.mjs",
-  "typings": "polpware-modal-directives.d.ts",
+  "typings": "index.d.ts",
   "exports": {
     "./package.json": {
       "default": "./package.json"
     },
     ".": {
-      "types": "./polpware-modal-directives.d.ts",
+      "types": "./index.d.ts",
       "esm2020": "./esm2020/polpware-modal-directives.mjs",
       "es2020": "./fesm2020/polpware-modal-directives.mjs",
       "es2015": "./fesm2015/polpware-modal-directives.mjs",
@@ -27,5 +27,8 @@
       "default": "./fesm2020/polpware-modal-directives.mjs"
     }
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"
+  }
 }
