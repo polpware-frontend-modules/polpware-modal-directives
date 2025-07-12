@@ -56,12 +56,12 @@ class polpModalDraggableDirective {
             i0.ɵɵlistener("mousedown", function polpModalDraggableDirective_mousedown_HostBindingHandler($event) { return ctx.onMouseDown($event); })("mouseup", function polpModalDraggableDirective_mouseup_HostBindingHandler($event) { return ctx.onMouseUp($event); }, false, i0.ɵɵresolveDocument)("mousemove", function polpModalDraggableDirective_mousemove_HostBindingHandler($event) { return ctx.onMouseMove($event); }, false, i0.ɵɵresolveDocument)("mouseleave", function polpModalDraggableDirective_mouseleave_HostBindingHandler($event) { return ctx.onMouseLeave($event); }, false, i0.ɵɵresolveDocument);
         } } }); }
 }
-(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(polpModalDraggableDirective, [{
+(() => { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(polpModalDraggableDirective, [{
         type: Directive,
         args: [{
                 selector: '[polpModalDraggable]'
             }]
-    }], function () { return [{ type: i0.ElementRef }]; }, { onMouseDown: [{
+    }], () => [{ type: i0.ElementRef }], { onMouseDown: [{
             type: HostListener,
             args: ['mousedown', ['$event']]
         }], onMouseUp: [{
@@ -80,7 +80,7 @@ class PolpDraggableModule {
     static { this.ɵmod = /*@__PURE__*/ i0.ɵɵdefineNgModule({ type: PolpDraggableModule }); }
     static { this.ɵinj = /*@__PURE__*/ i0.ɵɵdefineInjector({}); }
 }
-(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(PolpDraggableModule, [{
+(() => { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(PolpDraggableModule, [{
         type: NgModule,
         args: [{
                 declarations: [
