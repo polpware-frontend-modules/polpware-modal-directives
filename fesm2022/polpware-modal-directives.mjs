@@ -51,7 +51,7 @@ class polpModalDraggableDirective {
     onMouseLeave(event) {
         this.isDraggable = false;
     }
-    static { this.ɵfac = function polpModalDraggableDirective_Factory(t) { return new (t || polpModalDraggableDirective)(i0.ɵɵdirectiveInject(i0.ElementRef)); }; }
+    static { this.ɵfac = function polpModalDraggableDirective_Factory(__ngFactoryType__) { return new (__ngFactoryType__ || polpModalDraggableDirective)(i0.ɵɵdirectiveInject(i0.ElementRef)); }; }
     static { this.ɵdir = /*@__PURE__*/ i0.ɵɵdefineDirective({ type: polpModalDraggableDirective, selectors: [["", "polpModalDraggable", ""]], hostBindings: function polpModalDraggableDirective_HostBindings(rf, ctx) { if (rf & 1) {
             i0.ɵɵlistener("mousedown", function polpModalDraggableDirective_mousedown_HostBindingHandler($event) { return ctx.onMouseDown($event); })("mouseup", function polpModalDraggableDirective_mouseup_HostBindingHandler($event) { return ctx.onMouseUp($event); }, false, i0.ɵɵresolveDocument)("mousemove", function polpModalDraggableDirective_mousemove_HostBindingHandler($event) { return ctx.onMouseMove($event); }, false, i0.ɵɵresolveDocument)("mouseleave", function polpModalDraggableDirective_mouseleave_HostBindingHandler($event) { return ctx.onMouseLeave($event); }, false, i0.ɵɵresolveDocument);
         } } }); }
@@ -76,7 +76,7 @@ class polpModalDraggableDirective {
         }] }); })();
 
 class PolpDraggableModule {
-    static { this.ɵfac = function PolpDraggableModule_Factory(t) { return new (t || PolpDraggableModule)(); }; }
+    static { this.ɵfac = function PolpDraggableModule_Factory(__ngFactoryType__) { return new (__ngFactoryType__ || PolpDraggableModule)(); }; }
     static { this.ɵmod = /*@__PURE__*/ i0.ɵɵdefineNgModule({ type: PolpDraggableModule }); }
     static { this.ɵinj = /*@__PURE__*/ i0.ɵɵdefineInjector({}); }
 }
