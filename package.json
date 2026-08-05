@@ -1,6 +1,6 @@
 {
   "name": "@polpware/modal-directives",
-  "version": "19.0.0",
+  "version": "19.0.1",
   "dependencies": {
     "tslib": "^2.3.0"
   },
@@ -9,18 +9,19 @@
     "@angular/core": "^19.0.0"
   },
   "module": "fesm2022/polpware-modal-directives.mjs",
-  "typings": "index.d.ts",
+  "typings": "types/polpware-modal-directives.d.ts",
   "exports": {
     "./package.json": {
       "default": "./package.json"
     },
     ".": {
-      "types": "./index.d.ts",
+      "types": "./types/polpware-modal-directives.d.ts",
       "default": "./fesm2022/polpware-modal-directives.mjs"
     }
   },
   "sideEffects": false,
+  "type": "module",
   "scripts": {
-    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with partial compilation mode, before attempting to publish.\\n')\" && exit 1"
   }
 }
